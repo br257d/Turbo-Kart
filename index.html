@@ -152,7 +152,7 @@ const km={ArrowUp:'up',KeyW:'up',ArrowDown:'dn',KeyS:'dn',ArrowLeft:'l',KeyA:'l'
 addEventListener('keydown',e=>{if(km[e.code]){keys[km[e.code]]=1;e.preventDefault()}if(e.code==='KeyR')start(sel);if(e.code==='KeyM')$('mu').click()});
 addEventListener('keyup',e=>{if(km[e.code])keys[km[e.code]]=0});
 
-/* ---------- som (tudo sintetizado) ---------- */
+/* ---------- som ---------- */
 let AC,MG,eng,engG,mute=0,cdN=0,thT=0,mi=0;
 function aInit(){
   if(AC)return;
@@ -291,7 +291,7 @@ function bumpOpp(dt){
   });
 }
 
-/* ---------- os bugs (só o jogador sofre) ---------- */
+/* ---------- os bugs ---------- */
 const BUGS=[
  ()=>{T.sunk=2.4},
  ()=>{P.vy=58},
